@@ -12,10 +12,10 @@ from sqlalchemy.orm import relationship
 # Import your forms from the forms.py
 from forms import CreatePostForm, RegisterForm, LoginForm, CommentForm
 import hashlib
-from dotenv import load_dotenv  # pip install python-dotenv
+# from dotenv import load_dotenv  # pip install python-dotenv
 
 
-load_dotenv("/home/bert/PycharmProjects/environment_variables/.env")
+# load_dotenv("/home/bert/PycharmProjects/environment_variables/.env")
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ['SECRET_KEY']
